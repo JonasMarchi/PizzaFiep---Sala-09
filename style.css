@@ -104,3 +104,93 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+/* ============ hero =================*/
+.hero{
+    height: 100vh;
+    background: url('./pizza-Fundo.png') center/cover no-repeat;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.hero-text h2{
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.hero-text{
+    max-width: 500px;
+    text-align: right;
+}
+
+.hero-text button{
+    padding: 12px 28px;
+    background: #ff3c00;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-text button:hover{
+    background: #ff5c2b;
+}
+
+/* ==================== DIFERENCIAIS ================*/
+.diferenciais{
+    background: #145a32;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.diferenciais h2{
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+/* GRID */
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #1e6f43;
+    padding: 30px 20px;
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* imagem */
+.card img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 1.3;
+}
