@@ -15,7 +15,7 @@ body{
 
 /* ===================== HEADER ===================== */
 .header{
-    position: absolute;
+    position: fixed;
     /* deixa ele fixo */
     
     width: 100%;
@@ -211,11 +211,11 @@ body{
 /*GRID*/
 .lista{
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .lista ul{
@@ -247,7 +247,11 @@ body{
     color: #000;
 }
 .contato{
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
 }
 .contato h2{
     display: flex;
@@ -257,11 +261,7 @@ body{
     color: white;
 }
 
-.mapa{
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-400px);
-}
+
 .mapa iframe{
     border-radius: 12px;
     display: block;
@@ -276,16 +276,27 @@ footer{
 footer p{
     color: #000;
 }
-.form-container{
-    justify-content: center;
+
+.form-container form{
+    width: 100%;
     display: flex;
-    align-items: center;
-    transform: translateY(-300px);
+    flex-direction: column;
+    gap: 15px;
 }
-.form-container form-group{
-    display: flex;
-    margin: 0 auto;
-    margin-left: 100px;
-    border-radius: 20px;
+
+.form-group{
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
     border: none;
+}
+.conteudo img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
