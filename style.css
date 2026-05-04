@@ -207,3 +207,85 @@ body{
     margin-bottom: 40px;
     font-weight: 500;
 }
+
+/*GRID*/
+.lista{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.lista ul{
+    list-style: none;
+}
+
+/* título das colunas */
+.lista ul::before{
+    content: attr(data-title);
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/*itens*/
+.lista li{
+    margin: 6px 0;
+    font-weight: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* bolinha igual do figma */
+
+.lista li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+.contato{
+    background-color: #000;
+}
+.contato h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+}
+
+.mapa{
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-400px);
+}
+.mapa iframe{
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+footer{
+    background-color: white;
+}
+
+footer p{
+    color: #000;
+}
+.form-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transform: translateY(-300px);
+}
+.form-container form-group{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 100px;
+    border-radius: 20px;
+    border: none;
+}

@@ -93,6 +93,60 @@
     </div>
 </section>
 
+<section class="sobre">
+    <div class="conteudo">
+        <h2>Sobre Nós</h2>
+        <img src="" alt="pizza">
+        <div class="texto">
+            <p>
+                Na Pizza FIEP, acreditamos que boas histórias começam ao redor de uma mesa. Nosso espaço nasceu com a ideia de unir pessoas, sabores e momentos especiais em um ambiente acolhedor, inspirado nas tradicionais pizzarias italianas.
+                <br>Tudo começa com ingredientes selecionados, massa preparada com cuidado e o aroma irresistível que sai do forno a lenha. Cada pizza é feita com dedicação, respeitando a tradição, mas também trazendo um toque de criatividade que torna cada experiência única.
+                <br>Mais do que servir pizzas, queremos criar memórias. Seja em um encontro entre amigos, uma pausa depois de um dia de trabalho ou uma comemoração especial, a Pizza FIEP é um lugar para compartilhar, conversar e aproveitar o melhor da boa comida.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="contato">
+    <h2>Entre em Contato</h2>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4065667841046!2d-49.274221580202415!3d-25.424667637764166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777904875533!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+    <div class="form-container">
+
+        <form Method="post" action="http://localhost:5500/usuarios">
+            <input type="hidden" name="id" value="3">
+
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="form-group button">
+                <button type="submit"></button>
+                <button formaction="http://localhost:5500/usuarios/3" type="submit">Enviar</button>
+            </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p>&copy; Jonas Marchi</p>
+    </div>
+    <div>
+        <p>(41) 99999-9999</p>
+        <p>R.Paula Gomes, 270, São Francisco</p>
+    </div>
+</footer>
     <script src="./script.js"></script>
+    <script>
+        // configuração do javascript do formulário
+    </script>
 </body>
 </html>
