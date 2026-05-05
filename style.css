@@ -15,7 +15,7 @@ body{
 
 /* ===================== HEADER ===================== */
 .header{
-    position: absolute;
+    position: fixed;
     /* deixa ele fixo */
     
     width: 100%;
@@ -211,11 +211,11 @@ body{
 /*GRID*/
 .lista{
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .lista ul{
@@ -247,45 +247,138 @@ body{
     color: #000;
 }
 .contato{
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
 }
 .contato h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
-.mapa{
+.linha2{
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    transform: translateX(-400px);
+    gap: 60px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .mapa iframe{
     border-radius: 12px;
     display: block;
     margin: 0 auto;
-    
+    flex: 1;
+    transform: translateX(-190px);
 }
 
-footer{
-    background-color: white;
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* Alinha os itens ao topo por padrão para permitir que a direita suba */
+    align-items: flex-start; 
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-footer p{
-    color: #000;
+.footer-left {
+    display: flex;
+    /* Força este lado específico a ficar no centro da altura do footer */
+    align-self: center; 
 }
-.form-container{
+
+.footer-right {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; 
+    /* Garante que este bloco fique no topo */
+    align-self: flex-start; 
+    gap: 5px;
+}
+
+footer p {
+    color: #1c1c1c;
+    margin: 0;
+}
+
+.form-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    text-align: left;
+    font-size: 20px;
+    transform: translateX(-120px);
+    flex: unset;
+    justify-content: flex-end;
+}
+
+.form-group{
+    width: 100%;
+}
+
+.form-group input, .form-group textarea{
+    width: 120%;
+    padding: 10px;
+    border-radius: 14px;
+    border: none;
+}
+.form-group button{
     justify-content: center;
+    width: 90px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    background-color: #145a32;
+}
+.sobre{
+    text-align: center;
+    background-color: #145a32;
+    padding: 20px 20px;
+}
+.sobre h2{
+    font-size: 32px;
+    margin-bottom: 1px;
+    font-weight: 500;
+}
+.texto-topo{
+    margin: 20px ;
+    text-align: center;
+    font-size: 17px;
+}
+
+.linha {
     display: flex;
     align-items: center;
-    transform: translateY(-300px);
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
 }
-.form-container form-group{
-    display: flex;
-    margin: 0 auto;
-    margin-left: 100px;
-    border-radius: 20px;
-    border: none;
+.textos {
+    max-width: 500px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.textos p {
+    margin-bottom: 15px;
+}
+.linha img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto; /* centraliza o bloco inteiro */
 }
